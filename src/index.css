@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* index.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e2e2e2 0%, #ffffff 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some nice styling to buttons */
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a73e8;
+  transform: translateY(-2px);
+}
+
+/* Style for the main container */
+.main-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+  color: #1a73e8;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Card styles for individual components */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a smooth transition effect */
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Input fields */
+input[type="file"],
+select {
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  transition: border 0.3s;
+}
+
+input[type="file"]:focus,
+select:focus {
+  border: 1px solid #1a73e8;
+  outline: none;
+}
+
+/* Text color adjustments */
+.text-gray-700 {
+  color: #555;
+}
+
+.text-blue-600 {
+  color: #1a73e8;
+}
+
+.text-red-600 {
+  color: #e63946;
+}
